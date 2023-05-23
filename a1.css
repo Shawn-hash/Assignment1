@@ -112,20 +112,26 @@ input {
 }
 
 .card-container {
-  width: 60%;
+  display: grid;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .card {
   /* Add your card styling here */
-  transition: transform .2s;
+  background-color: #f2f2f2;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
-  width: 40%;
+  width: 100%;
+  max-width: 600px;
+  transition: opacity 0.3s ease-out;
+  opacity: 1;
+}
+
+.card.fade-out {
+  opacity: 0;
 }
 
 .card img {
@@ -138,4 +144,12 @@ input {
   right: 10px;
   font-size: 20px;
   cursor: pointer;
+}
+
+.description {
+  font-family: Arial, sans-serif;
+  text-align: left;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
 }
