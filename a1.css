@@ -126,13 +126,9 @@ input {
   padding: 10px;
   width: 100%;
   max-width: 600px;
-  transition: opacity 0.3s ease-out;
-  opacity: 1;
+  transform-style: preserve-3d;
 }
 
-.card.fade-out {
-  opacity: 0;
-}
 
 .card img {
   max-width: 100%;
