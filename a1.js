@@ -37,11 +37,7 @@ function newItem() {
 
         // Render the card items
         renderCardItems();
-
-        document.getElementById("name").value = "";
-        document.getElementById("description").value = "";
-        document.getElementById("price").value = "";
-        document.getElementById("image").value = "";
+        clearInputs();
   } else {
       alert("Please fill in all fields.");
   }
@@ -196,8 +192,15 @@ function removeCard(button) {
   // });
 }
 
-// Call the renderCardItems function to initially display the card items
-renderCardItems();
+function clearInputs() {
+  document.getElementById("name").value = "";
+  document.getElementById("description").value = "";
+  document.getElementById("price").value = "";
+  document.getElementById("image").value = "";
+}
+
+renderCardItems();;
+
 
 
 
