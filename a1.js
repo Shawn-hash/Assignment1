@@ -84,7 +84,7 @@ function renderCardItems() {
     cardContent.appendChild(cardDescription);
 
     var cardPrice = document.createElement("p");
-    cardPrice.textContent = "Price: " + item.price;
+    cardPrice.textContent = "Price(CAD): " + item.price;
     cardContent.appendChild(cardPrice);
 
     cardItem.appendChild(cardContent);
@@ -125,7 +125,7 @@ function appendFirstTwoItems() {
     cardContent.appendChild(cardDescription);
 
     var cardPrice = document.createElement("p");
-    cardPrice.textContent = "Price: 5";
+    cardPrice.textContent = "Price(CAD): 5";
     cardContent.appendChild(cardPrice);
 
     cardItem.appendChild(cardContent);
@@ -163,7 +163,7 @@ function appendFirstTwoItems() {
         cardContent.appendChild(cardDescription);
 
         var cardPrice = document.createElement("p");
-        cardPrice.textContent = "Price: 169";
+        cardPrice.textContent = "Price(CAD): 169";
         cardContent.appendChild(cardPrice);
 
         cardItem.appendChild(cardContent);

@@ -126,9 +126,12 @@ input {
   padding: 10px;
   width: 100%;
   max-width: 600px;
-  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out;
 }
 
+.card.fade-out {
+  opacity: 0;
+}
 
 .card img {
   max-width: 100%;
@@ -148,4 +151,8 @@ input {
   padding: 10px;
   background-color: #f2f2f2;
   border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
