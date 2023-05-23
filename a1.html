@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="a1.css" rel="stylesheet" />
+</head>
+<body>
+<script type="text/javascript" src="a2.js"></script>
+
+<div class="topnav">
+  <a href="#home">Items Tracker</a>
+  <a href="#about">Project Description</a>
+</div>
+
+<div id="myDIV" class="header">
+  <h2>Items Tracker</h2>
+	<div class="field">
+		<input type="text" id="name" name="name" placeholder="Enter the item fullname" />
+	</div>
+	<div class="field">
+		<input type="text" id="description" name="description" placeholder="Enter the description" />
+	</div>
+  <div class="field">
+		<input type="text" id="price" name="price" placeholder="Enter the price" />
+	</div>
+  <div class="field">
+		<input type="text" id="image" name="image" placeholder="Enter the url for the image" />
+  <div onclick="newItem()" class="addBtn">Add Item</div>
+  </div>
+</div>
+<div> <button onclick="deleteAllItems()" class="addBtn">Delete All Items</button> </div>
+
+<div class="card-container" id = "cardContainer" >
+  <div class="card">
+    <span class="close-btn" onclick="removeCard(this)">×</span>
+  <img src="https://media.nedigital.sg/fairprice/fpol/media/images/product/XL/13146286_XL1_20220802.jpg">
+    
+    <h4><b>Kitchen Towel</b></h4> 
+    <p>Scott Kitchen Towel Rolls</p>
+    <p>Price: 5</p> 
+  </div>
+  <div class="card">
+    <span class="close-btn" onclick="removeCard(this)">×</span>
+  <img src="https://www.rollingstone.com/wp-content/uploads/2021/10/DSC_0212.jpg?w=1600&h=900&crop=1">
+    <h4><b>Airpods Gen 3</b></h4> 
+    <p>Personalized Spatial Audio with dynamic head tracking places sounds all around you to create a three-dimensional listening experience for music, TV shows, movies, and more — immersing you in sounds from every direction so it feels like you're in your very own concert hall or theater.</p>
+    <p>Price: 169</p> 
+  </div>
+</div>
+</body>
